@@ -43,7 +43,7 @@ jobs:
       name: Deploy no Docker 
       with:
         image: nisflei/app_f
-        tags: ${{ github.run_number }}
+        tags: master-${{ github.run_number }}
         registry: docker.io
         dockerfile: dockerfile
         username: ${{ secrets.DOCKER_USERNAME }}
